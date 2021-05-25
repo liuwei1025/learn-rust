@@ -1,4 +1,4 @@
-pub mod english {
+mod english {
     pub mod greetings {
         pub fn hello() {
             println!("Hello");

@@ -1,6 +1,8 @@
 mod phrases;
+mod prime;
 
 use phrases::chinese;
+use prime::is_prime;
 
 struct User {
     username: String,
@@ -57,7 +59,10 @@ fn main() {
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
 
-    chinese::farewells::everyone_will_know_you()
+    chinese::farewells::everyone_will_know_you();
+
+    let bol = is_prime(26);
+    println!("is prime?, {}", bol);
 }
 
 fn set_username(username: String) -> User {
@@ -77,7 +82,7 @@ fn area(rectangle: &Rectangle) -> u32 {
 }
 // Methods
 /**
- * methods are different from functions in that they’re defined within the context of a struct (or an enum or a trait object), 
+ * methods are different from functions in that they’re defined within the context of a struct (or an enum or a trait object),
  * and their first parameter is always self, which represents the instance of the struct the method is being called on
  */
 impl Rectangle {
