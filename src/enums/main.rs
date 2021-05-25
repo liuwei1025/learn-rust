@@ -52,7 +52,7 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
         None => None
     }
 }
-// 其他场景使用 _
+// 其他场景使用 _ 通配符
 fn some_u8_value(val: u8) {
     match val {
         1 => println!("one"),
