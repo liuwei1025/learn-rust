@@ -3,6 +3,8 @@ mod prime;
 mod rect;
 mod first_word;
 
+mod vector;
+
 use phrases::chinese;
 use prime::is_prime;
 use rect::{Rectangle, area};
