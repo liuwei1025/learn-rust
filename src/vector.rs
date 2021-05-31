@@ -1,6 +1,6 @@
 // vector 允许我们在一个单独的数据结构中储存多于一个的值，它在内存中彼此相邻地排列所有的值
 // 只能储存相同类型的值
-fn main() {
+pub fn main() {
   let _v: Vec<i32> = Vec::new();
 
   let mut v1 = vec![100, 2, 3];

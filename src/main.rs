@@ -76,6 +76,8 @@ fn main() {
 
     let bol = is_prime(26);
     println!("is prime?, {}", bol);
+
+    vector::main()
 }
 
 fn set_username(username: String) -> User {
